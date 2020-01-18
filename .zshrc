@@ -6,6 +6,8 @@ plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting web-search)
 gi() {
   if [[ $1 == vue ]] {
     curl -L -s https://raw.githubusercontent.com/Yingkaixiang/dotfiles/master/gitignore/vue/.gitignore | >> .gitignore
+  } else {
+    curl -L -s https://www.gitignore.io/api/$1 | >> .gitignore
   }
 }
 
@@ -13,3 +15,6 @@ gi() {
 host() {
   curl -L -s https://raw.githubusercontent.com/Yingkaixiang/dotfiles/master/hosts | >> /ect/hosts
 }
+
+# 设置 nvm 镜像源
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
