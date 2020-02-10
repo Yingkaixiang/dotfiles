@@ -1,3 +1,7 @@
 151.101.184.133 raw.githubusercontent.com
+# 只针对 git https 的下载方式
+# nslookup github.com 查询域名对应的真实 ip
+# ping github.com 获取本地使用的 ip
+# 可以用来验证 hosts 是否修改成功
 151.101.72.249 global-ssl.fastly.Net
 192.30.253.112 github.com

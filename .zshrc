@@ -16,5 +16,11 @@ host() {
   curl -L -s https://raw.githubusercontent.com/Yingkaixiang/dotfiles/master/hosts | >> /ect/hosts
 }
 
+# 设置 homebrew bottle 镜像源
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
+
 # 设置 nvm 镜像源
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
+
+# 快速启动本地服务
+alias http-server="npx http-server -c-1"
